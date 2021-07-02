@@ -70,7 +70,6 @@ const tagPrivacy = document.createElement("li")
 const tagCookies = document.createElement("li")
 const tagAdChoice = document.createElement("li")
 const imgAdChoice = document.createElement("img")
-const adChoiceImg = document.createElement("img")
 const tagTerms = document.createElement("li")
 const tagHelp = document.createElement("li")
 const anchorLanguageSpanish = document.createElement("a")
@@ -227,7 +226,6 @@ console.log("Text Appended Sucefully")
 
 console.log("Appending Elements")
 document.title = titleFinal
-document.head.appendChild(metaUTF8)>
 document.head.appendChild(linkShortcutImage)
 document.body.appendChild(facebookLogo)
 document.body.appendChild(h2)
@@ -240,7 +238,8 @@ formRegister.appendChild(lostPassword)
 formRegister.appendChild(createNewAccount)
 document.body.appendChild(pageRegister)
 document.write(" for a celebrity, band or business.")
-document.body.appendChild(languageList)
+document.body.appendChild(footer)
+footer.appendChild(languageList)
 languageList.appendChild(languageSpanish)
 languageSpanish.appendChild(anchorLanguageSpanish)
 languageList.appendChild(languageEnglish)
@@ -261,9 +260,8 @@ languageList.appendChild(languageSimplifiedChinese)
 languageSimplifiedChinese.appendChild(anchorLanguageSimplifiedChinese)
 languageList.appendChild(languageJapanese)
 languageJapanese.appendChild(anchorLanguageJapanese)
-document.body.appendChild(moreLanguages)
-document.body.appendChild(divSeparator)
-document.body.appendChild(tagIgnore)
+footer.appendChild(divSeparator)
+footer.appendChild(tagIgnore)
 tagIgnore.appendChild(tagRegister)
 tagRegister.appendChild(anchorTagRegister)
 tagIgnore.appendChild(tagLogIn)
@@ -347,7 +345,8 @@ inputPassword.setAttribute("minlenght","3")
 inputPassword.setAttribute("required", "")
 inputSubmit.setAttribute("type","submit")
 lostPassword.setAttribute("href","https://www.facebook.com/recover/initiate/?ars=facebook_login&amp;privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjI1MDIxMzkyLCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D")
-createNewAccount.setAttribute("href","#")
+createNewAccount.setAttribute("href","https://www.facebook.com/?refsrc=deprecated#")
+pageRegister.setAttribute("href","https://es-la.facebook.com/pages/create/?ref_type=registration_form")
 anchorLanguageSpanish.setAttribute("href", "https://es-la.facebook.com/")
 anchorLanguageSpanish.setAttribute("title", "Spanish")
 anchorLanguageEnglish.setAttribute("href", "https://www.facebook.com/")
@@ -433,3 +432,273 @@ anchorTagHelp.setAttribute("href", "https://www.facebook.com/help?ref=pf")
 anchorTagHelp.setAttribute("title", "Visit our Help Center.")
 imgAdChoice.setAttribute("src","img/about.png")
 console.log("Attributes Setted Sucefully")
+
+// Setting Styles
+
+console.log("Setting Styles")
+document.body.style.margin = "0"
+document.body.style.border = "0"
+document.body.style.padding = "0"
+document.body.style.backgroundColor = "#F0F2F5"
+facebookLogo.style.width = "20%"
+footer.style.position = "absolute"
+footer.style.bottom = "0"
+footer.style.backgroundColor = "fff"
+footer.style.padding = ".5em 2em"
+languageSpanish.style.display = "contents"
+anchorLanguageSpanish.style.margin = "0"
+anchorLanguageSpanish.style.textDecoration = "none"
+anchorLanguageSpanish.style.color = "8A8D91"
+anchorLanguageSpanish.addEventListener("mouseover",hover = ()=>{anchorLanguageSpanish.style.textDecoration = "underline"})
+anchorLanguageSpanish.addEventListener("mouseout",hover = ()=>{anchorLanguageSpanish.style.textDecoration = "none"})
+languageEnglish.style.display = "contents"
+anchorLanguageEnglish.style.margin = "0 .5em"
+anchorLanguageEnglish.style.textDecoration = "none"
+anchorLanguageEnglish.style.color = "8A8D91"
+anchorLanguageEnglish.addEventListener("mouseover",hover = ()=>{anchorLanguageEnglish.style.textDecoration = "underline"})
+anchorLanguageEnglish.addEventListener("mouseout",hover = ()=>{anchorLanguageEnglish.style.textDecoration = "none"})
+languagePortuguese.style.display = "contents"
+anchorLanguagePortuguese.style.margin = "0 .5em"
+anchorLanguagePortuguese.style.textDecoration = "none"
+anchorLanguagePortuguese.style.color = "8A8D91"
+anchorLanguagePortuguese.addEventListener("mouseover",hover = ()=>{anchorLanguagePortuguese.style.textDecoration = "underline"})
+anchorLanguagePortuguese.addEventListener("mouseout",hover = ()=>{anchorLanguagePortuguese.style.textDecoration = "none"})
+languageItalian.style.display = "contents"
+anchorLanguageItalian.style.margin = "0 .5em"
+anchorLanguageItalian.style.textDecoration = "none"
+anchorLanguageItalian.style.color = "8A8D91"
+anchorLanguageItalian.addEventListener("mouseover",hover = ()=>{anchorLanguageItalian.style.textDecoration = "underline"})
+anchorLanguageItalian.addEventListener("mouseout",hover = ()=>{anchorLanguageItalian.style.textDecoration = "none"})
+languageFrench.style.display = "contents"
+anchorLanguageFrench.style.margin = "0 .5em"
+anchorLanguageFrench.style.textDecoration = "none"
+anchorLanguageFrench.style.color = "8A8D91"
+anchorLanguageFrench.addEventListener("mouseover",hover = ()=>{anchorLanguageFrench.style.textDecoration = "underline"})
+anchorLanguageFrench.addEventListener("mouseout",hover = ()=>{anchorLanguageFrench.style.textDecoration = "none"})
+languageGerman.style.display = "contents"
+anchorLanguageGerman.style.margin = "0 .5em"
+anchorLanguageGerman.style.textDecoration = "none"
+anchorLanguageGerman.style.color = "8A8D91"
+anchorLanguageGerman.addEventListener("mouseover",hover = ()=>{anchorLanguageGerman.style.textDecoration = "underline"})
+anchorLanguageGerman.addEventListener("mouseout",hover = ()=>{anchorLanguageGerman.style.textDecoration = "none"})
+languageArab.style.display = "contents"
+anchorLanguageArab.style.margin = "0 .5em"
+anchorLanguageArab.style.textDecoration = "none"
+anchorLanguageArab.style.color = "8A8D91"
+anchorLanguageArab.addEventListener("mouseover",hover = ()=>{anchorLanguageArab.style.textDecoration = "underline"})
+anchorLanguageArab.addEventListener("mouseout",hover = ()=>{anchorLanguageArab.style.textDecoration = "none"})
+languageHindu.style.display = "contents"
+anchorLanguageHindu.style.margin = "0 .5em"
+anchorLanguageHindu.style.textDecoration = "none"
+anchorLanguageHindu.style.color = "8A8D91"
+anchorLanguageHindu.addEventListener("mouseover",hover = ()=>{anchorLanguageHindu.style.textDecoration = "underline"})
+anchorLanguageHindu.addEventListener("mouseout",hover = ()=>{anchorLanguageHindu.style.textDecoration = "none"})
+languageSimplifiedChinese.style.display = "contents"
+anchorLanguageSimplifiedChinese.style.margin = "0 .5em"
+anchorLanguageSimplifiedChinese.style.textDecoration = "none"
+anchorLanguageSimplifiedChinese.style.color = "8A8D91"
+anchorLanguageSimplifiedChinese.addEventListener("mouseover",hover = ()=>{anchorLanguageSimplifiedChinese.style.textDecoration = "underline"})
+anchorLanguageSimplifiedChinese.addEventListener("mouseout",hover = ()=>{anchorLanguageSimplifiedChinese.style.textDecoration = "none"})
+languageJapanese.style.display = "contents"
+anchorLanguageJapanese.style.margin = "0 .5em"
+anchorLanguageJapanese.style.textDecoration = "none"
+anchorLanguageJapanese.style.color = "8A8D91"
+anchorLanguageJapanese.addEventListener("mouseover",hover = ()=>{anchorLanguageJapanese.style.textDecoration = "underline"})
+anchorLanguageJapanese.addEventListener("mouseout",hover = ()=>{anchorLanguageJapanese.style.textDecoration = "none"})
+divSeparator.style.backgroundColor = "DDDFE2"
+divSeparator.style.width = "95%"
+divSeparator.style.height = "1px"
+divSeparator.style.margin = "0 auto"
+tagRegister.style.display = "contents"
+anchorTagRegister.style.margin = "0"
+anchorTagRegister.style.textDecoration = "none"
+anchorTagRegister.style.color = "8A8D91"
+anchorTagRegister.addEventListener("mouseover",hover = ()=>{anchorTagRegister.style.textDecoration = "underline"})
+anchorTagRegister.addEventListener("mouseout",hover = ()=>{anchorTagRegister.style.textDecoration = "none"})
+tagLogIn.style.display = "contents"
+anchorTagLogIn.style.margin = "0 .5em"
+anchorTagLogIn.style.textDecoration = "none"
+anchorTagLogIn.style.color = "8A8D91"
+anchorTagLogIn.addEventListener("mouseover",hover = ()=>{anchorTagLogIn.style.textDecoration = "underline"})
+anchorTagLogIn.addEventListener("mouseout",hover = ()=>{anchorTagLogIn.style.textDecoration = "none"})
+tagMessenger.style.display = "contents"
+anchorTagMessenger.style.margin = "0 .5em"
+anchorTagMessenger.style.textDecoration = "none"
+anchorTagMessenger.style.color = "8A8D91"
+anchorTagMessenger.addEventListener("mouseover",hover = ()=>{anchorTagMessenger.style.textDecoration = "underline"})
+anchorTagMessenger.addEventListener("mouseout",hover = ()=>{anchorTagMessenger.style.textDecoration = "none"})
+tagFacebookLite.style.display = "contents"
+anchorTagFacebookLite.style.margin = "0 .5em"
+anchorTagFacebookLite.style.textDecoration = "none"
+anchorTagFacebookLite.style.color = "8A8D91"
+anchorTagFacebookLite.addEventListener("mouseover",hover = ()=>{anchorTagFacebookLite.style.textDecoration = "underline"})
+anchorTagFacebookLite.addEventListener("mouseout",hover = ()=>{anchorTagFacebookLite.style.textDecoration = "none"})
+tagWatch.style.display = "contents"
+anchorTagWatch.style.margin = "0 .5em"
+anchorTagWatch.style.textDecoration = "none"
+anchorTagWatch.style.color = "8A8D91"
+anchorTagWatch.addEventListener("mouseover",hover = ()=>{anchorTagWatch.style.textDecoration = "underline"})
+anchorTagWatch.addEventListener("mouseout",hover = ()=>{anchorTagWatch.style.textDecoration = "none"})
+tagPeople.style.display = "contents"
+anchorTagPeople.style.margin = "0 .5em"
+anchorTagPeople.style.textDecoration = "none"
+anchorTagPeople.style.color = "8A8D91"
+anchorTagPeople.addEventListener("mouseover",hover = ()=>{anchorTagPeople.style.textDecoration = "underline"})
+anchorTagPeople.addEventListener("mouseout",hover = ()=>{anchorTagPeople.style.textDecoration = "none"})
+tagPages.style.display = "contents"
+anchorTagPages.style.margin = "0 .5em"
+anchorTagPages.style.textDecoration = "none"
+anchorTagPages.style.color = "8A8D91"
+anchorTagPages.addEventListener("mouseover",hover = ()=>{anchorTagPages.style.textDecoration = "underline"})
+anchorTagPages.addEventListener("mouseout",hover = ()=>{anchorTagPages.style.textDecoration = "none"})
+tagPagesCategories.style.display = "contents"
+anchorTagPagesCategories.style.margin = "0 .5em"
+anchorTagPagesCategories.style.textDecoration = "none"
+anchorTagPagesCategories.style.color = "8A8D91"
+anchorTagPagesCategories.addEventListener("mouseover",hover = ()=>{anchorTagPagesCategories.style.textDecoration = "underline"})
+anchorTagPagesCategories.addEventListener("mouseout",hover = ()=>{anchorTagPagesCategories.style.textDecoration = "none"})
+tagPlaces.style.display = "contents"
+anchorTagPlaces.style.margin = "0 .5em"
+anchorTagPlaces.style.textDecoration = "none"
+anchorTagPlaces.style.color = "8A8D91"
+anchorTagPlaces.addEventListener("mouseover",hover = ()=>{anchorTagPlaces.style.textDecoration = "underline"})
+anchorTagPlaces.addEventListener("mouseout",hover = ()=>{anchorTagPlaces.style.textDecoration = "none"})
+tagGames.style.display = "contents"
+anchorTagGames.style.margin = "0 .5em"
+anchorTagGames.style.textDecoration = "none"
+anchorTagGames.style.color = "8A8D91"
+anchorTagGames.addEventListener("mouseover",hover = ()=>{anchorTagGames.style.textDecoration = "underline"})
+anchorTagGames.addEventListener("mouseout",hover = ()=>{anchorTagGames.style.textDecoration = "none"})
+tagLocations.style.display = "contents"
+anchorTagLocations.style.margin = "0 .5em"
+anchorTagLocations.style.textDecoration = "none"
+anchorTagLocations.style.color = "8A8D91"
+anchorTagLocations.addEventListener("mouseover",hover = ()=>{anchorTagLocations.style.textDecoration = "underline"})
+anchorTagLocations.addEventListener("mouseout",hover = ()=>{anchorTagLocations.style.textDecoration = "none"})
+tagMarketplace.style.display = "contents"
+anchorTagMarketplace.style.margin = "0 .5em"
+anchorTagMarketplace.style.textDecoration = "none"
+anchorTagMarketplace.style.color = "8A8D91"
+anchorTagMarketplace.addEventListener("mouseover",hover = ()=>{anchorTagMarketplace.style.textDecoration = "underline"})
+anchorTagMarketplace.addEventListener("mouseout",hover = ()=>{anchorTagMarketplace.style.textDecoration = "none"})
+tagPay.style.display = "contents"
+anchorTagPay.style.margin = "0 .5em"
+anchorTagPay.style.textDecoration = "none"
+anchorTagPay.style.color = "8A8D91"
+anchorTagPay.addEventListener("mouseover",hover = ()=>{anchorTagPay.style.textDecoration = "underline"})
+anchorTagPay.addEventListener("mouseout",hover = ()=>{anchorTagPay.style.textDecoration = "none"})
+tagGroups.style.display = "contents"
+anchorTagGroups.style.margin = "0 .5em"
+anchorTagGroups.style.textDecoration = "none"
+anchorTagGroups.style.color = "8A8D91"
+anchorTagGroups.addEventListener("mouseover",hover = ()=>{anchorTagGroups.style.textDecoration = "underline"})
+anchorTagGroups.addEventListener("mouseout",hover = ()=>{anchorTagGroups.style.textDecoration = "none"})
+tagJobs.style.display = "contents"
+anchorTagJobs.style.margin = "0 .5em"
+anchorTagJobs.style.textDecoration = "none"
+anchorTagJobs.style.color = "8A8D91"
+anchorTagJobs.addEventListener("mouseover",hover = ()=>{anchorTagJobs.style.textDecoration = "underline"})
+anchorTagJobs.addEventListener("mouseout",hover = ()=>{anchorTagJobs.style.textDecoration = "none"})
+tagOculus.style.display = "contents"
+anchorTagOculus.style.margin = "0 .5em"
+anchorTagOculus.style.textDecoration = "none"
+anchorTagOculus.style.color = "8A8D91"
+anchorTagOculus.addEventListener("mouseover",hover = ()=>{anchorTagOculus.style.textDecoration = "underline"})
+anchorTagOculus.addEventListener("mouseout",hover = ()=>{anchorTagOculus.style.textDecoration = "none"})
+tagPortal.style.display = "contents"
+anchorTagPortal.style.margin = "0 .5em"
+anchorTagPortal.style.textDecoration = "none"
+anchorTagPortal.style.color = "8A8D91"
+anchorTagPortal.addEventListener("mouseover",hover = ()=>{anchorTagPortal.style.textDecoration = "underline"})
+anchorTagPortal.addEventListener("mouseout",hover = ()=>{anchorTagPortal.style.textDecoration = "none"})
+tagInstagram.style.display = "contents"
+anchorTagInstagram.style.margin = "0 .5em"
+anchorTagInstagram.style.textDecoration = "none"
+anchorTagInstagram.style.color = "8A8D91"
+anchorTagInstagram.addEventListener("mouseover",hover = ()=>{anchorTagInstagram.style.textDecoration = "underline"})
+anchorTagInstagram.addEventListener("mouseout",hover = ()=>{anchorTagInstagram.style.textDecoration = "none"})
+tagLocal.style.display = "contents"
+anchorTagLocal.style.margin = "0 .5em"
+anchorTagLocal.style.textDecoration = "none"
+anchorTagLocal.style.color = "8A8D91"
+anchorTagLocal.addEventListener("mouseover",hover = ()=>{anchorTagLocal.style.textDecoration = "underline"})
+anchorTagLocal.addEventListener("mouseout",hover = ()=>{anchorTagLocal.style.textDecoration = "none"})
+tagFundraisers.style.display = "contents"
+anchorTagFundraisers.style.margin = "0 .5em"
+anchorTagFundraisers.style.textDecoration = "none"
+anchorTagFundraisers.style.color = "8A8D91"
+anchorTagFundraisers.addEventListener("mouseover",hover = ()=>{anchorTagFundraisers.style.textDecoration = "underline"})
+anchorTagFundraisers.addEventListener("mouseout",hover = ()=>{anchorTagFundraisers.style.textDecoration = "none"})
+tagServices.style.display = "contents"
+anchorTagServices.style.margin = "0 .5em"
+anchorTagServices.style.textDecoration = "none"
+anchorTagServices.style.color = "8A8D91"
+anchorTagServices.addEventListener("mouseover",hover = ()=>{anchorTagServices.style.textDecoration = "underline"})
+anchorTagServices.addEventListener("mouseout",hover = ()=>{anchorTagServices.style.textDecoration = "none"})
+tagVotingInfoCenter.style.display = "contents"
+anchorTagVotingInfoCenter.style.margin = "0 .5em"
+anchorTagVotingInfoCenter.style.textDecoration = "none"
+anchorTagVotingInfoCenter.style.color = "8A8D91"
+anchorTagVotingInfoCenter.addEventListener("mouseover",hover = ()=>{anchorTagVotingInfoCenter.style.textDecoration = "underline"})
+anchorTagVotingInfoCenter.addEventListener("mouseout",hover = ()=>{anchorTagVotingInfoCenter.style.textDecoration = "none"})
+tagAbout.style.display = "contents"
+anchorTagAbout.style.margin = "0 .5em"
+anchorTagAbout.style.textDecoration = "none"
+anchorTagAbout.style.color = "8A8D91"
+anchorTagAbout.addEventListener("mouseover",hover = ()=>{anchorTagAbout.style.textDecoration = "underline"})
+anchorTagAbout.addEventListener("mouseout",hover = ()=>{anchorTagAbout.style.textDecoration = "none"})
+tagCreateAd.style.display = "contents"
+anchorTagCreateAd.style.margin = "0 .5em"
+anchorTagCreateAd.style.textDecoration = "none"
+anchorTagCreateAd.style.color = "8A8D91"
+anchorTagCreateAd.addEventListener("mouseover",hover = ()=>{anchorTagCreateAd.style.textDecoration = "underline"})
+anchorTagCreateAd.addEventListener("mouseout",hover = ()=>{anchorTagCreateAd.style.textDecoration = "none"})
+tagCreatePage.style.display = "contents"
+anchorTagCreatePage.style.margin = "0 .5em"
+anchorTagCreatePage.style.textDecoration = "none"
+anchorTagCreatePage.style.color = "8A8D91"
+anchorTagCreatePage.addEventListener("mouseover",hover = ()=>{anchorTagCreatePage.style.textDecoration = "underline"})
+anchorTagCreatePage.addEventListener("mouseout",hover = ()=>{anchorTagCreatePage.style.textDecoration = "none"})
+tagDevelopers.style.display = "contents"
+anchorTagDevelopers.style.margin = "0 .5em"
+anchorTagDevelopers.style.textDecoration = "none"
+anchorTagDevelopers.style.color = "8A8D91"
+anchorTagDevelopers.addEventListener("mouseover",hover = ()=>{anchorTagDevelopers.style.textDecoration = "underline"})
+anchorTagDevelopers.addEventListener("mouseout",hover = ()=>{anchorTagDevelopers.style.textDecoration = "none"})
+tagCareers.style.display = "contents"
+anchorTagCareers.style.margin = "0 .5em"
+anchorTagCareers.style.textDecoration = "none"
+anchorTagCareers.style.color = "8A8D91"
+anchorTagCareers.addEventListener("mouseover",hover = ()=>{anchorTagCareers.style.textDecoration = "underline"})
+anchorTagCareers.addEventListener("mouseout",hover = ()=>{anchorTagCareers.style.textDecoration = "none"})
+tagPrivacy.style.display = "contents"
+anchorTagPrivacy.style.margin = "0 .5em"
+anchorTagPrivacy.style.textDecoration = "none"
+anchorTagPrivacy.style.color = "8A8D91"
+anchorTagPrivacy.addEventListener("mouseover",hover = ()=>{anchorTagPrivacy.style.textDecoration = "underline"})
+anchorTagPrivacy.addEventListener("mouseout",hover = ()=>{anchorTagPrivacy.style.textDecoration = "none"})
+tagCookies.style.display = "contents"
+anchorTagCookies.style.margin = "0 .5em"
+anchorTagCookies.style.textDecoration = "none"
+anchorTagCookies.style.color = "8A8D91"
+anchorTagCookies.addEventListener("mouseover",hover = ()=>{anchorTagCookies.style.textDecoration = "underline"})
+anchorTagCookies.addEventListener("mouseout",hover = ()=>{anchorTagCookies.style.textDecoration = "none"})
+tagAdChoice.style.display = "contents"
+anchorTagAdChoice.style.margin = "0 .5em"
+anchorTagAdChoice.style.textDecoration = "none"
+anchorTagAdChoice.style.color = "8A8D91"
+anchorTagAdChoice.addEventListener("mouseover",hover = ()=>{anchorTagAdChoice.style.textDecoration = "underline"})
+anchorTagAdChoice.addEventListener("mouseout",hover = ()=>{anchorTagAdChoice.style.textDecoration = "none"})
+tagTerms.style.display = "contents"
+anchorTagTerms.style.margin = "0 .5em"
+anchorTagTerms.style.textDecoration = "none"
+anchorTagTerms.style.color = "8A8D91"
+anchorTagTerms.addEventListener("mouseover",hover = ()=>{anchorTagTerms.style.textDecoration = "underline"})
+anchorTagTerms.addEventListener("mouseout",hover = ()=>{anchorTagTerms.style.textDecoration = "none"})
+tagHelp.style.display = "contents"
+anchorTagHelp.style.margin = "0 .5em"
+anchorTagHelp.style.textDecoration = "none"
+anchorTagHelp.style.color = "8A8D91"
+anchorTagHelp.addEventListener("mouseover",hover = ()=>{anchorTagHelp.style.textDecoration = "underline"})
+anchorTagHelp.addEventListener("mouseout",hover = ()=>{anchorTagHelp.style.textDecoration = "none"})
+console.log("Styles setted sucefully")
