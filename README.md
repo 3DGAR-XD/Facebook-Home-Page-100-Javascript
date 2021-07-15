@@ -2,7 +2,7 @@
 
 This project is only for measure my skills on javascript.  
 For try it, download or clone this repo, create a `index.htm`or `index.html` file and copy this code
-`<body><script src="facebook.js charset="uft-8"></script></body>` and run it
+`<body><script src="facebook.js" charset="uft-8"></script></body>` and run it
 
 ## Explaining the process.
 
