@@ -1,8 +1,7 @@
 # Facebook Home Page 100% on Javascript
 
-This project is only for measure my skills on javascript.  
-For try it, download or clone this repo, create a `index.htm`or `index.html` file and copy this code
-`<body><script src="facebook.js" charset="utf-8"></script></body>` and run it
+This project is only for measure my skills on javascript.
+For try it, just copy the code and paste it on your browser console, and run it.
 
 ## Explaining the process.
 
