@@ -1,7 +1,7 @@
 # Facebook Home Page 100% on Javascript
 
 This project is only for measure my skills on javascript.
-For try it, just copy the code and paste it on your browser console, and run it.
+For try it, just donwlodas the file and run it.
 
 ## Explaining the process.
 
