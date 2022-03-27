@@ -1,7 +1,7 @@
 # Facebook Home Page 100% on Javascript
 
 This project is only for measure my skills on javascript.
-For try it, just donwlodas the file and run it.
+For try it, just open an [About:Blank](about:blank) page and paste the code in the console (works on screens with 5:4 aspect ratio)
 
 ## Explaining the process.
 
